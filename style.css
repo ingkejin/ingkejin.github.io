@@ -423,7 +423,8 @@ i {
   .global-footer .contact-list {
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 20px; }
     .global-footer .contact-list-title {
       margin-right: 20px; }
     .global-footer .contact-list-item {
