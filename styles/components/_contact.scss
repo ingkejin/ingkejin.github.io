@@ -3,6 +3,7 @@
 
   .contact-list {
     @include flexbox(center);
+    margin-bottom: 20px;
     
     &-title {
       margin-right: 20px;
@@ -21,11 +22,6 @@
           opacity: .6;
           font-weight: 600;
         }
-
-        // &:hover {
-        //   transform: scale(1.1);
-        //   font-weight: 600;
-        // }
       }
     }
   }
