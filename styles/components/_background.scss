@@ -1,0 +1,15 @@
+.wrapper {
+  width: 100%;
+
+  z-index: -1;
+  background-color: $background;
+
+  @include responsive(T) {
+    @include flexbox;
+    height: 100vh;
+    
+    .wrapper-box {
+      width: 100%;
+    }
+  }
+}
