@@ -14,3 +14,4 @@ function closeSidebar() {
 
 sidebarMenuButton.addEventListener('click', openSidebar);
 sidebarOverlay.addEventListener('click', closeSidebar);
+
