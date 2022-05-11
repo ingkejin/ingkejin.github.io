@@ -35,7 +35,7 @@ function throwError(err) {
   if (err) {
     console.log('💥 Oops! Something went wrong')
   }
-}
+} 
 
 function buildHtml() {
   path.resolve(__dirname, '../index.html'), path.join(buildDir, 'index.html')

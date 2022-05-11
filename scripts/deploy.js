@@ -12,7 +12,7 @@ ghpages.publish(buildDir, function (err) {
     console.log('😭😭 Failed to deploy')
     return
   }
-
+  
   fs.rmSync(buildDir, { recursive: true, force: true })
   console.log('🚀🚀🚀 Successfully deployed')
 })
