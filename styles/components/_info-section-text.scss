@@ -1,29 +1,16 @@
-@include responsive(T) {
-  .info-section {
-    position: relative;
-    @include flexbox(start);
-
-  .info-photo {
-    position: absolute;
-    top: 0;
-    left: 120px;
-    width: 200px;
-
-    img {
-      width: 150px;
-    }
-  }
+.info-section {
+  @include flexbox(center);
+  flex-flow: column;
 
   &-text {
-    flex-shrink: 0;
     display: inline-block;
-    margin-top: -20px;
+    margin-top: 20px;
     padding: 30px 50px;
+    flex-shrink: 0;
     border: 5px solid $black;
+    border-radius: 10px;
     background-color: $white;
     z-index: $info-section-text;
-    border-radius: 10px;
-
 
     h1 {
       position: relative;
@@ -40,7 +27,7 @@
       height: 4px;
       background: $black;
     }
-    
+
     .info-intro {
       @include text-style(18);
       line-height: 1.2;
@@ -55,9 +42,16 @@
 
     .info-link {
       margin-top: 20px;
-    }
+    } 
+  }
+
+@include responsive(T) {
+  @include flexbox(start);
+  flex-flow: row;
+
+  &-text {
+    margin-top: -20px;
   }
   }
 }
-
 

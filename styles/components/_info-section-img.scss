@@ -1,4 +1,11 @@
 .info-section {
+  &-img {
+    &-emoji {
+      img {
+        width: 350px;
+      }
+    }
+  }
   @include responsive(T) {
     &-img {
       position: relative;

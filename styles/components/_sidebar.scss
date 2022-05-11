@@ -1,0 +1,55 @@
+.sidebar {
+  $sidebar-width: 240px;
+  @include no-scrollbar;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 32px 20px;
+  background-color: $white;
+  transform: translate3d(-#{$sidebar-width}, 0, 0);
+  transition: transform 300ms ease-in-out;
+  overscroll-behavior: contain;
+
+  &.is-active {
+    transform: translate3d(0, 0, 0);
+  }
+
+  &-header {
+  padding: 0 12px;
+
+    .logo {
+      @include flexbox(center);
+
+      a {
+        display: block;
+      }
+
+      img {
+        display: block;
+        width: 40px;
+      }
+    }
+  }
+
+  &-nav {
+    margin-top: 20px;
+    text-align: center;
+
+    &-item {
+      @include text-style(18);
+      font-weight: 700;
+      margin-top: 10px;
+
+      a {
+        transition: transform 200ms ease-in-out;
+
+        &:active {
+          opacity: .6;
+        }
+      }
+    }
+  }
+}

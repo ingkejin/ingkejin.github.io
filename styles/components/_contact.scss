@@ -1,26 +1,45 @@
 .global-footer {
-  @include responsive(T) {
-    position: relative;
+  position: relative;
 
+  .contact-list {
+    @include flexbox(center);
+    
+    &-title {
+      margin-right: 20px;
+    }
+
+    &-item {
+      @include text-style(16);
+      font-weight: 500;
+
+      a {
+        display: block;
+        padding: 10px;
+        transition: opacity 200ms ease-in-out, font-weight 200ms ease-in-out;
+
+        &:active {
+          opacity: .6;
+          font-weight: 600;
+        }
+
+        // &:hover {
+        //   transform: scale(1.1);
+        //   font-weight: 600;
+        // }
+      }
+    }
+  }
+
+  @include responsive(T) {
     .contact-list {
       @include pos-center-y;
-      top: -97px;
       @include flexbox(start);
+      top: -97px;
       margin-top: 50px;
 
-      &-title {
-        margin-right: 20px;
-      }
-
       &-item {
-        @include text-style(16);
-        font-weight: 500;
-
         a {
-          display: block;
-          padding: 10px;
           transition: transform 200ms ease-in-out;
-
           &:hover {
             transform: scale(1.1);
             font-weight: 600;
