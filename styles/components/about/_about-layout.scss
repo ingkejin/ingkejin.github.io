@@ -1,0 +1,8 @@
+@include responsive(T) {
+  .about {
+    &-wrapper {
+      @include pos-center;
+      width: 100%;
+    }
+  }
+}

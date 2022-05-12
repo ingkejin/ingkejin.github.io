@@ -25,6 +25,11 @@
 @import './components/sidebar';
 @import './components/gnb-icon-button'; 
 
+@import './components/about/about-layout';
+@import './components/about/about-gnb';
+@import './components/about/about-main';
+@import './components/about/about-contact';
+
 @import './layouts/grids';
 @import './layouts/overlay';
 

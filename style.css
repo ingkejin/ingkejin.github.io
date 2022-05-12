@@ -169,7 +169,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  color: #3f4150; }
+  color: #383838; }
 
 h1 {
   margin: 0; }
@@ -267,18 +267,20 @@ i {
 .ic-menu:before {
   content: "\e901"; }
 
-.wrapper {
-  width: 100%;
-  height: 100vh;
-  z-index: -1;
+body {
   background-color: #fff7e1; }
-  @media screen and (min-width: 768px) {
-    .wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      .wrapper .wrapper-box {
-        width: 100%; } }
+  body .wrapper {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-color: #fff7e1; }
+    @media screen and (min-width: 768px) {
+      body .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        body .wrapper .wrapper-box {
+          width: 100%; } }
 
 @media screen and (min-width: 768px) {
   .gnb-wrapper {
@@ -300,7 +302,7 @@ i {
         transition: transform 200ms ease-in-out; }
         .gnb-wrapper .gnb-nav-list .gnb-nav-item a:hover, .gnb-wrapper .gnb-nav-list .gnb-nav-item a:focus {
           transform: scale(1.1);
-          color: #191a20; }
+          color: #171717; }
         .gnb-wrapper .gnb-nav-list .gnb-nav-item a:active {
           opacity: 0.5; } }
 
@@ -514,7 +516,110 @@ i {
   .gnb-icon-button.is-menu {
     color: #000; }
     .gnb-icon-button.is-menu:active {
-      color: #8c8d96; }
+      color: #6c6c6c; }
+
+@media screen and (min-width: 768px) {
+  .about-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; } }
+
+@media screen and (min-width: 768px) {
+  .about-gnb-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 22px;
+    font-weight: 700; }
+    .about-gnb-list .about-gnb-item a {
+      display: block;
+      padding: 15px;
+      transition: transform 200ms ease-in-out; }
+      .about-gnb-list .about-gnb-item a:hover, .about-gnb-list .about-gnb-item a:focus {
+        transform: scale(1.1);
+        color: #171717; }
+      .about-gnb-list .about-gnb-item a:active {
+        opacity: 0.5; } }
+
+.about-main {
+  padding: 20px; }
+  .about-main-section {
+    color: #41b983;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    background-color: #171717; }
+    .about-main-section .about-btn {
+      height: 30px;
+      border-radius: 10px 10px 0 0;
+      border-bottom: 1px solid #707070;
+      background-color: #383838; }
+      .about-main-section .about-btn-list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; }
+      .about-main-section .about-btn-item {
+        width: 14px;
+        height: 14px;
+        margin-top: 8px;
+        margin-right: 8px;
+        border-radius: 50%; }
+        .about-main-section .about-btn-item.red {
+          margin-left: 10px;
+          background-color: #f74544; }
+        .about-main-section .about-btn-item.yellow {
+          background-color: #faad15; }
+        .about-main-section .about-btn-item.green {
+          background-color: #37c027; }
+    .about-main-section .my-info {
+      padding: 20px; }
+      .about-main-section .my-info-name {
+        color: #51eaa5;
+        margin-bottom: 10px; }
+      .about-main-section .my-info-list {
+        margin-top: 20px; }
+      .about-main-section .my-info-item {
+        margin-top: 5px; }
+        .about-main-section .my-info-item:last-child {
+          font-size: 20px;
+          font-weight: 700;
+          margin-top: 10px; }
+    .about-main-section .about-skills-web, .about-main-section .about-skills-visual {
+      color: #51eaa5;
+      margin-top: 20px; }
+    .about-main-section .about-skills-web-list, .about-main-section .about-skills-visual-list {
+      margin-top: 10px; }
+
+.about-footer .contact-list {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .about-footer .contact-list-title {
+    padding: 15px; }
+  .about-footer .contact-list-item {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    font-weight: 500; }
+    .about-footer .contact-list-item a {
+      display: block;
+      padding: 10px;
+      transition: opacity 200ms ease-in-out, font-weight 200ms ease-in-out; }
+      .about-footer .contact-list-item a:active {
+        opacity: .6;
+        font-weight: 600; }
+  @media screen and (min-width: 768px) {
+    .about-footer .contact-list {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; }
+      .about-footer .contact-list-item a {
+        transition: transform 200ms ease-in-out;
+        padding: 15px; }
+        .about-footer .contact-list-item a:hover {
+          transform: scale(1.1);
+          font-weight: 600; } }
 
 .container {
   width: 100%;

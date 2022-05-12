@@ -1,0 +1,25 @@
+.about-gnb-list {
+  @include responsive(T) {
+    @include flexbox(start);
+    font-size: 22px;
+    font-weight: 700;
+
+    .about-gnb-item {
+      a {
+        display: block;
+        padding: 15px;
+        transition: transform 200ms ease-in-out;
+
+        &:hover,
+        &:focus {
+          transform: scale(1.1);
+          color: $dark;
+        }
+
+        &:active {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
