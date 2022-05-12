@@ -1,0 +1,12 @@
+.kona-icon {
+  position: relative;
+  width: 144px;
+  height: 144px;
+  background-color: $white;
+  border-radius: 30px;
+
+  img {
+    @include pos-center;
+    width: 180px;
+  }
+}

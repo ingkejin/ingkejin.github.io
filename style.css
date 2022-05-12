@@ -666,6 +666,19 @@ body {
     border: 2px solid #fff;
     border-radius: 20px; }
 
+.kona-icon {
+  position: relative;
+  width: 144px;
+  height: 144px;
+  background-color: #fff;
+  border-radius: 30px; }
+  .kona-icon img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px; }
+
 .container {
   width: 100%;
   padding: 0 5px;
