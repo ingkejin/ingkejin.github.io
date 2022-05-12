@@ -1,4 +1,6 @@
 .about-gnb-list {
+  color: $white;
+
   @include responsive(T) {
     @include flexbox(start);
     font-size: 22px;
@@ -8,12 +10,12 @@
       a {
         display: block;
         padding: 15px;
-        transition: transform 200ms ease-in-out;
+        transition: transform 200ms ease-in-out, color 200ms ease-in-out;
 
         &:hover,
         &:focus {
           transform: scale(1.1);
-          color: $dark;
+          color: $border;
         }
 
         &:active {

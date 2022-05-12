@@ -268,12 +268,12 @@ i {
   content: "\e901"; }
 
 body {
-  background-color: #fff7e1; }
+  background-color: #282827; }
   body .wrapper {
     width: 100%;
     height: 100vh;
     z-index: -1;
-    background-color: #fff7e1; }
+    background-color: #282827; }
     @media screen and (min-width: 768px) {
       body .wrapper {
         display: flex;
@@ -284,7 +284,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .gnb-wrapper {
-    position: relative; }
+    position: relative;
+    color: #fff; }
     .gnb-wrapper .gnb-nav-list {
       position: absolute;
       top: 50%;
@@ -299,10 +300,10 @@ body {
       .gnb-wrapper .gnb-nav-list .gnb-nav-item a {
         display: block;
         padding: 15px;
-        transition: transform 200ms ease-in-out; }
+        transition: transform 200ms ease-in-out, color 200ms ease-in-out; }
         .gnb-wrapper .gnb-nav-list .gnb-nav-item a:hover, .gnb-wrapper .gnb-nav-list .gnb-nav-item a:focus {
           transform: scale(1.1);
-          color: #171717; }
+          color: #707070; }
         .gnb-wrapper .gnb-nav-list .gnb-nav-item a:active {
           opacity: 0.5; } }
 
@@ -316,7 +317,7 @@ body {
     margin-top: 20px;
     padding: 30px 50px;
     flex-shrink: 0;
-    border: 5px solid #000;
+    border: 2px solid #707070;
     border-radius: 10px;
     background-color: #fff;
     z-index: 90; }
@@ -426,7 +427,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    color: #fff; }
     .global-footer .contact-list-title {
       margin-right: 20px; }
     .global-footer .contact-list-item {
@@ -465,12 +467,13 @@ body {
   height: 100vh;
   overflow-y: auto;
   padding: 32px 20px;
-  background-color: #fff7e1;
-  border: 4px solid #000;
+  background-color: #282827;
+  border: 4px solid #171717;
   border-radius: 0 20px 20px 0;
   transform: translate3d(-240px, 0, 0);
   transition: transform 300ms ease-in-out;
-  overscroll-behavior: contain; }
+  overscroll-behavior: contain;
+  color: #fff; }
   .sidebar::-webkit-scrollbar {
     display: none !important; }
   .sidebar.is-active {
@@ -514,7 +517,7 @@ body {
   margin-left: 10px;
   transition: color 200ms ease-in-out; }
   .gnb-icon-button.is-menu {
-    color: #000; }
+    color: #51eaa5; }
     .gnb-icon-button.is-menu:active {
       color: #6c6c6c; }
 
@@ -526,22 +529,24 @@ body {
     transform: translate(-50%, -50%);
     width: 100%; } }
 
-@media screen and (min-width: 768px) {
-  .about-gnb-list {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 22px;
-    font-weight: 700; }
-    .about-gnb-list .about-gnb-item a {
-      display: block;
-      padding: 15px;
-      transition: transform 200ms ease-in-out; }
-      .about-gnb-list .about-gnb-item a:hover, .about-gnb-list .about-gnb-item a:focus {
-        transform: scale(1.1);
-        color: #171717; }
-      .about-gnb-list .about-gnb-item a:active {
-        opacity: 0.5; } }
+.about-gnb-list {
+  color: #fff; }
+  @media screen and (min-width: 768px) {
+    .about-gnb-list {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-size: 22px;
+      font-weight: 700; }
+      .about-gnb-list .about-gnb-item a {
+        display: block;
+        padding: 15px;
+        transition: transform 200ms ease-in-out, color 200ms ease-in-out; }
+        .about-gnb-list .about-gnb-item a:hover, .about-gnb-list .about-gnb-item a:focus {
+          transform: scale(1.1);
+          color: #707070; }
+        .about-gnb-list .about-gnb-item a:active {
+          opacity: 0.5; } }
 
 .mac-main {
   padding: 20px; }
@@ -594,7 +599,8 @@ body {
 .about-footer .contact-list {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  color: #fff; }
   .about-footer .contact-list-title {
     padding: 15px; }
   .about-footer .contact-list-item {
@@ -615,7 +621,7 @@ body {
       align-items: center;
       justify-content: flex-start; }
       .about-footer .contact-list-item a {
-        transition: transform 200ms ease-in-out;
+        transition: transform 200ms ease-in-out, font-weight 200ms ease-in-out;
         padding: 15px; }
         .about-footer .contact-list-item a:hover {
           transform: scale(1.1);
@@ -679,6 +685,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 185px; }
+  .icon-size .todo-icon {
+    width: 120px; }
 
 .container {
   width: 100%;

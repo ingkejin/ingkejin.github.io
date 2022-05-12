@@ -1,6 +1,7 @@
 .gnb-wrapper {
   @include responsive(T) {
   position: relative;
+  color: $white;
 
     .gnb-nav-list {
       @include pos-center-y;
@@ -14,12 +15,12 @@
         a {
           display: block;
           padding: 15px;
-          transition: transform 200ms ease-in-out;
+          transition: transform 200ms ease-in-out, color 200ms ease-in-out;
 
           &:hover,
           &:focus {
             transform: scale(1.1);
-            color: $dark;
+            color: $border;
           }
 
           &:active {

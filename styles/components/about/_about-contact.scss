@@ -1,6 +1,7 @@
 .about-footer {
   .contact-list {
     @include flexbox;
+    color: $white;
 
     &-title {
       padding: 15px
@@ -27,8 +28,9 @@
 
       &-item {
         a {
-          transition: transform 200ms ease-in-out;
+          transition: transform 200ms ease-in-out, font-weight 200ms ease-in-out;
           padding: 15px;
+
           &:hover {
             transform: scale(1.1);
             font-weight: 600;
