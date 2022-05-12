@@ -63,14 +63,12 @@
     }
 
     .about-skills {
-      &-web,
-      &-visual {
+      &-title {
         color: $about-text-brigt;
         margin-top: 20px;
+
       }
-      
-      &-web-list,
-      &-visual-list {
+      &-list {
         margin-top: 10px;
       }
     }
