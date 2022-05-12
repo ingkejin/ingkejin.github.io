@@ -628,6 +628,7 @@ body {
           font-weight: 600; } }
 
 .project-section {
+  margin: 0 auto;
   margin-top: 10px; }
   .project-section:first-child {
     margin-top: 0; }
@@ -645,10 +646,10 @@ body {
     color: #fff;
     font-weight: 700; }
   .project-section-main {
-    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
     flex-flow: column; }
     .project-section-main .project-icon {
       margin-top: 10px; }
@@ -671,6 +672,20 @@ body {
     text-align: center;
     border: 2px solid #fff;
     border-radius: 20px; }
+  @media screen and (min-width: 768px) {
+    .project-section-main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row;
+      padding: 60px 20px; }
+      .project-section-main .project-icon {
+        margin-right: 40px; }
+    .project-section-list {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 0%; } }
 
 .icon-size {
   position: relative;

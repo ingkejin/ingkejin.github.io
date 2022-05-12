@@ -1,4 +1,5 @@
 .project-section {
+  margin: 0 auto;
   margin-top: 10px;
 
   &:first-child {
@@ -23,8 +24,8 @@
   }
 
   &-main {
-    padding: 20px;
     @include flexbox(center);
+    padding: 20px;
     flex-flow: column;
 
     .project-icon {
@@ -49,5 +50,22 @@
     text-align: center;
     border: 2px solid $white;
     border-radius: 20px;
+  }
+  
+  @include responsive(T) {
+    &-main {
+      @include flexbox;
+      flex-flow: row;
+      padding: 60px 20px;
+
+      .project-icon {
+        margin-right: 40px;
+      }
+    }
+
+    &-list {
+      @include flexbox(start);
+      margin-top: 0%;
+    }
   }
 }
