@@ -1,5 +1,5 @@
 @include responsive(T) {
-  .about {
+  .center {
     &-wrapper {
       @include pos-center;
       width: 100%;
