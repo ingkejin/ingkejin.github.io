@@ -519,7 +519,7 @@ body {
       color: #6c6c6c; }
 
 @media screen and (min-width: 768px) {
-  .about-wrapper {
+  .center-wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -543,52 +543,52 @@ body {
       .about-gnb-list .about-gnb-item a:active {
         opacity: 0.5; } }
 
-.about-main {
+.mac-main {
   padding: 20px; }
-  .about-main-section {
+  .mac-main-section {
     color: #41b983;
     border: 1px solid #707070;
     border-radius: 10px;
     background-color: #171717; }
-    .about-main-section .about-btn {
+    .mac-main-section .mac-btn {
       height: 30px;
       border-radius: 10px 10px 0 0;
       border-bottom: 1px solid #707070;
       background-color: #383838; }
-      .about-main-section .about-btn-list {
+      .mac-main-section .mac-btn-list {
         display: flex;
         align-items: center;
         justify-content: flex-start; }
-      .about-main-section .about-btn-item {
+      .mac-main-section .mac-btn-item {
         width: 14px;
         height: 14px;
         margin-top: 8px;
         margin-right: 8px;
         border-radius: 50%; }
-        .about-main-section .about-btn-item.red {
+        .mac-main-section .mac-btn-item.red {
           margin-left: 10px;
           background-color: #f74544; }
-        .about-main-section .about-btn-item.yellow {
+        .mac-main-section .mac-btn-item.yellow {
           background-color: #faad15; }
-        .about-main-section .about-btn-item.green {
+        .mac-main-section .mac-btn-item.green {
           background-color: #37c027; }
-    .about-main-section .my-info {
+    .mac-main-section .my-info {
       padding: 20px; }
-      .about-main-section .my-info-name {
+      .mac-main-section .my-info-name {
         color: #51eaa5;
         margin-bottom: 10px; }
-      .about-main-section .my-info-list {
+      .mac-main-section .my-info-list {
         margin-top: 20px; }
-      .about-main-section .my-info-item {
+      .mac-main-section .my-info-item {
         margin-top: 5px; }
-        .about-main-section .my-info-item:last-child {
+        .mac-main-section .my-info-item:last-child {
           font-size: 20px;
           font-weight: 700;
           margin-top: 10px; }
-    .about-main-section .about-skills-web, .about-main-section .about-skills-visual {
+    .mac-main-section .about-skills-title {
       color: #51eaa5;
       margin-top: 20px; }
-    .about-main-section .about-skills-web-list, .about-main-section .about-skills-visual-list {
+    .mac-main-section .about-skills-list {
       margin-top: 10px; }
 
 .about-footer .contact-list {
@@ -620,6 +620,51 @@ body {
         .about-footer .contact-list-item a:hover {
           transform: scale(1.1);
           font-weight: 600; } }
+
+.project-section {
+  margin-top: 10px; }
+  .project-section:first-child {
+    margin-top: 0; }
+  .project-section .mac-main-section {
+    color: #41b983;
+    border-radius: 10px;
+    background-color: #171717; }
+  .project-section .mac-btn-list {
+    position: relative; }
+  .project-section .project-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    color: #fff;
+    font-weight: 700; }
+  .project-section-main {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column; }
+    .project-section-main .project-icon {
+      margin-top: 10px; }
+  .project-section-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    color: #fff;
+    max-width: 300px; }
+  .project-section-item {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 8px;
+    margin-top: 10px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 20px; }
 
 .container {
   width: 100%;

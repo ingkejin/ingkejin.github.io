@@ -1,0 +1,54 @@
+.project-section {
+  margin-top: 10px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  .mac-main-section {
+    color: $about-text;
+    border-radius: 10px;
+    background-color: $dark;
+  }
+
+  .mac-btn-list {
+    position: relative;
+  }
+
+  .project-title {
+    @include pos-center-x;
+    margin-top: 5px;
+    color: $white;
+    font-weight: 700;
+  }
+
+  &-main {
+    padding: 20px;
+    @include flexbox(center);
+    flex-flow: column;
+
+    .project-icon {
+      margin-top: 10px
+    }
+  }
+
+  &-list {
+    @include flexbox(center);
+    @include text-style(16);
+    flex-wrap: wrap;
+    margin-top: 15px;
+    color: $white;
+    max-width: 300px;
+    // border: 1px solid red;
+  }
+
+  &-item {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 8px;
+    margin-top: 10px;
+    text-align: center;
+    border: 2px solid $white;
+    border-radius: 20px;
+  }
+}

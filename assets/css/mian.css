@@ -207,7 +207,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  color: #3f4150;
+  color: #3c3b3c;
 }
 
 h1 {
@@ -335,7 +335,11 @@ i {
   content: "\e901";
 }
 
-.wrapper {
+body {
+  background-color: #fff7e1;
+}
+
+body .wrapper {
   width: 100%;
   height: 100vh;
   z-index: -1;
@@ -343,12 +347,12 @@ i {
 }
 
 @media screen and (min-width: 768px) {
-  .wrapper {
+  body .wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .wrapper .wrapper-box {
+  body .wrapper .wrapper-box {
     width: 100%;
   }
 }
@@ -376,7 +380,7 @@ i {
   }
   .gnb-wrapper .gnb-nav-list .gnb-nav-item a:hover, .gnb-wrapper .gnb-nav-list .gnb-nav-item a:focus {
     transform: scale(1.1);
-    color: #191a20;
+    color: #171818;
   }
   .gnb-wrapper .gnb-nav-list .gnb-nav-item a:active {
     opacity: 0.5;
@@ -667,7 +671,52 @@ i {
 }
 
 .gnb-icon-button.is-menu:active {
-  color: #8c8d96;
+  color: #6c6c6c;
+}
+
+.about-main {
+  padding: 20px;
+}
+
+.about-main-section {
+  color: #3c3b3c;
+  border: 1px solid #d1d2d2;
+  border-radius: 10px;
+  background-color: #f3f5f4;
+}
+
+.about-main-section .about-btn {
+  height: 30px;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 1px solid #d1d2d2;
+  background-color: #fff;
+}
+
+.about-main-section .about-btn-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.about-main-section .about-btn-item {
+  width: 14px;
+  height: 14px;
+  margin-top: 8px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.about-main-section .about-btn-item.red {
+  margin-left: 10px;
+  background-color: #e0504a;
+}
+
+.about-main-section .about-btn-item.yellow {
+  background-color: #eeb038;
+}
+
+.about-main-section .about-btn-item.green {
+  background-color: #5abc3c;
 }
 
 .container {
